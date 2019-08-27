@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Lists</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/listsPage.js"></script>
+</head>
+<body>
+    <h1>Task Manager</h1>
+    <br>
+    <h3>Task Lists</h3>
+    <br>
+    <table id="taskLists">
+        <tr>
+            <td></td>
+            <th class="headRow">List Name</th>
+            <th class="headRow">Category</th>
+            <th class="headRow">Progress (%)</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td class="fa fa-bars" onclick="openSingleListPage('details')"></td>
+            <td>Name</td>
+            <td>cat. 1</td>
+            <td>50</td>
+            <td class="fa fa-trash" onclick="removeList()"></td>
+        </tr>
+        <tr id="addList">
+            <th></th>
+            <td class="addListBtn" colspan="3" onclick="openSingleListPage('new')">+ Add List</td>
+            <th></th>
+        </tr>
+    </table>
+</body>
+</html>

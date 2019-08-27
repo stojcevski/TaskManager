@@ -1,0 +1,57 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+#taskLists {
+    width:100%
+}
+
+#mainList {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    width: 60%;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+}
+
+tr {
+    padding: 1px;
+    border: 1px solid white;
+}
+
+.headRow {
+    background-color: #d3d3d3;
+}
+
+.addListBtn, .mainPageMenu {
+    background-color: #F5F5F5;
+    border: 2px solid grey;
+}
+
+.addListBtn:hover, .mainPageMenu:hover {
+    background-color: #d3d3d3;
+}
+
+.listRow:hover {
+    background-color: #F5F5F5;
+}
+
+.deleteCell {
+    display: inline;
+}
+
+.fa {
+    display: block!important;
+}
+
+
