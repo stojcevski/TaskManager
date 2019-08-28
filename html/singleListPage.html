@@ -5,14 +5,55 @@
     <title>List</title>
     <script src="../js/singleListPage.js"></script>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <h1>Task Manager</h1>
+    <h1 class="headerLine">Task Manager</h1>
+    <div id="backToListsBtn" onclick="location.href='listsPage.html'" class="fa fa-arrow-left"></div>
     <br>
-    <h3 id="header"></h3>
+    <h3 id="header" class="headerLine"></h3>
     <br>
-    <div id="">
-
+    <div id="addListForm">
+        <div id="fieldDesc">
+            <div class="descText">Insert List Name:</div>
+            <div class="descText">Choose List Category:</div>
+            <div class="descText">Choose List Tags:</div>
+            <div class="descText">Add Task(s) to the List:</div>
+        </div>
+        <div id="inputField">
+            <input class="inputForms">
+            <select class="inputForms">
+                <option value="cat1">Cat 1</option>
+                <option value="cat2">Cat 2</option>
+            </select>
+            <select class="inputForms" multiple size="4">
+                <option value="tag1">Tag 1</option>
+                <option value="tag2">Tag 2</option>
+                <option value="tag3">Tag 2</option>
+                <option value="tag4">Tag 2</option>
+            </select>
+            <button id="addTaskBtn" class="inputForms" onclick="showAddTaskWrapper()">Add Task</button>
+        </div>
+    </div>
+    <div id="taskWrapper">
+        <div id="fieldDescTask">
+            <div class="descText">Insert Task Name:</div>
+            <div class="descText">Insert Task Description:</div>
+            <div class="descText">Choose Task State:</div>
+            <button class="descText" onclick="submitTask()">Submit Task</button>
+        </div>
+        <div id="inputFieldTask">
+            <input class="inputForms">
+            <input class="inputForms">
+            <select class="inputForms">
+                <option value="1">Completed</option>
+                <option value="0">Uncompleted</option>
+            </select>
+            <button class="descText" onclick="cancelTask()">Cancel</button>
+        </div>
+    </div>
+    <div id="btnWrapper">
+        <button id="submitListBtn" onclick="submitList()">Submit List</button>
     </div>
 </body>
 </html>

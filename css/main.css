@@ -6,7 +6,7 @@ h3 {
     text-align: center;
 }
 
-#taskLists {
+#taskLists, #categoriesLists {
     width:100%
 }
 
@@ -33,12 +33,12 @@ tr {
     background-color: #d3d3d3;
 }
 
-.addListBtn, .mainPageMenu {
+.addListBtn, .addCategoryBtn, .mainPageMenu {
     background-color: #F5F5F5;
     border: 2px solid grey;
 }
 
-.addListBtn:hover, .mainPageMenu:hover {
+.addListBtn:hover, .mainPageMenu:hover, .addCategoryBtn:hover {
     background-color: #d3d3d3;
 }
 
@@ -53,5 +53,73 @@ tr {
 .fa {
     display: block!important;
 }
+
+#backToMainBtn, #backToListsBtn {
+    padding-left: 5%;
+}
+
+#fieldDesc {
+    float: left;
+    width: 50%;
+    text-align: right;
+
+}
+
+#fieldDescTask {
+
+    width: 50%;
+    text-align: right;
+
+}
+
+#inputField {
+    float: left;
+    width: 50%;
+    text-align: left;
+
+}
+
+#inputFieldTask {
+    float: right;
+    width: 50%;
+    text-align: left;
+
+}
+
+.descText {
+    margin: 5%;
+}
+
+.inputForms {
+    display: block;
+    margin: 5%;
+}
+
+#taskWrapper {
+    display: none;
+    /*display: flex;*/
+    justify-content: center;
+}
+
+#addListForm {
+    display: flex;
+    justify-content: center;
+}
+
+#btnWrapper {
+    text-align: center;
+
+}
+
+.categoryTxt, #categoryInput, #btnWrapper {
+    margin: 5%;
+    float: left;
+}
+
+#categoryWrapper {
+    display: none;
+    justify-content: center;
+}
+
 
 
