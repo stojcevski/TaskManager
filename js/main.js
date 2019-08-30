@@ -1,6 +1,6 @@
 ;(function() {
 
-
+    //localStorage.clear();
 
 
     if (typeof(Storage) !== "undefined") {

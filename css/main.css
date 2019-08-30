@@ -6,7 +6,7 @@ h3 {
     text-align: center;
 }
 
-#taskLists, #categoriesLists {
+#taskLists, #categoriesLists, #tagsLists, #tasksLists {
     width:100%
 }
 
@@ -33,12 +33,12 @@ tr {
     background-color: #d3d3d3;
 }
 
-.addListBtn, .addCategoryBtn, .mainPageMenu {
+.addListBtn, .addCategoryBtn, .addTagBtn, .mainPageMenu {
     background-color: #F5F5F5;
     border: 2px solid grey;
 }
 
-.addListBtn:hover, .mainPageMenu:hover, .addCategoryBtn:hover {
+.addListBtn:hover, .mainPageMenu:hover, .addCategoryBtn:hover, .addTagBtn:hover {
     background-color: #d3d3d3;
 }
 
@@ -58,7 +58,7 @@ tr {
     padding-left: 5%;
 }
 
-#fieldDesc {
+#fieldDesc, .fieldDesc1 {
     float: left;
     width: 50%;
     text-align: right;
@@ -72,7 +72,7 @@ tr {
 
 }
 
-#inputField {
+#inputField, .inputField1 {
     float: left;
     width: 50%;
     text-align: left;
@@ -87,38 +87,45 @@ tr {
 }
 
 .descText {
-    margin: 5%;
+    margin: 10px;
+    width: 30%;
+    text-align: right;
 }
 
 .inputForms {
     display: block;
-    margin: 5%;
+    margin: 10px;
+    width: 30%;
 }
 
 #taskWrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: none;
     /*display: flex;*/
     justify-content: center;
+    background-color: cornsilk;
 }
 
-#addListForm {
+#addListForm, .addElementForm {
     display: flex;
     justify-content: center;
 }
 
-#btnWrapper {
-    text-align: center;
 
-}
 
-.categoryTxt, #categoryInput, #btnWrapper {
+.categoryTxt, #categoryInput, .tagTxt, #tagInput, #btnWrapper {
     margin: 5%;
     float: left;
 }
 
-#categoryWrapper {
+#categoryWrapper, #tagWrapper {
     display: none;
     justify-content: center;
+}
+
+button {
+   font-weight: bolder;
 }
 
 
