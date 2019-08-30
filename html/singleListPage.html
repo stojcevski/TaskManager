@@ -46,7 +46,7 @@
             </select>
         </div>
         <div class="addElementForm">
-            <button class="descText" onclick="submitTask()">Submit Task</button>
+            <button id="submitTaskBtn" class="descText" onclick="submitTask()">Submit Task</button>
             <button class="descText" onclick="cancelTask()">Cancel</button>
         </div>
     </div>
@@ -58,14 +58,14 @@
             <th></th>
         </tr>
         <tr class="templateRow" hidden>
-            <td class="fa fa-bars" onclick="openSingleListPage('details')"></td>
-            <td class="taskNameRow">ss</td>
-            <td class="taskStateRow">ss</td>
-            <td class="fa fa-trash" onclick="removeCategory()"></td>
+            <td class="fa fa-bars" onclick="showAddTaskWrapper('details', this)"></td>
+            <td class="taskNameRow painted">ss</td>
+            <td class="taskStateRow painted">ss</td>
+            <td class="fa fa-trash" onclick="removeTask()"></td>
         </tr>
         <tr id="addList">
             <th></th>
-            <td class="addCategoryBtn" onclick="showAddTaskWrapper()" colspan="2">+ Add Task</td>
+            <td class="addCategoryBtn" onclick="showAddTaskWrapper('new')" colspan="2">+ Add Task</td>
             <th></th>
         </tr>
     </table>

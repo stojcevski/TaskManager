@@ -70,6 +70,16 @@ function appendListRow(list, listNo) {
 
     newRow.getElementsByClassName("listProgressRow")[0].textContent = progress;
 
+    if(progress == 100) {
+        newRow.getElementsByClassName("painted")[2].setAttribute("style", "background-color: green");
+    }
+    else {
+
+        var progressBarParent = newRow.getElementsByClassName("painted")[2];
+        progressBarParent.setAttribute("style", "background: linear-gradient(to right, green 0%,green "+progress+"%,#000000 "+progress+"%,white "+progress+"%,white 100%);");
+    }
+
+
     //Append new List row
     table.insertAdjacentHTML("beforebegin", newRow.outerHTML);
 }
